@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # Database Service
+  mongo:
+    image: mongo:6.0
+    container_name: pb_database
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - pb-network
+    restart: unless-stopped
+
+  # Backend REST API Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pb_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongo:27017/panchabhoota
+      - JWT_SECRET=super_secret_spiritual_key_108
+      - JWT_EXPIRES_IN=7d
+      - NODE_ENV=production
+    depends_on:
+      - mongo
+    networks:
+      - pb-network
+    restart: unless-stopped
+
+  # Frontend Angular static Nginx Service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: pb_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - pb-network
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+
+networks:
+  pb-network:
+    driver: bridge

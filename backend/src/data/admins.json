@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "iqy5myb",
+    "createdAt": "2026-05-27T07:21:42.012Z",
+    "username": "ShivaAdmin",
+    "email": "admin@panchabhoota.org",
+    "password": "$2a$10$CHh4lxcDNB7CDgNzlXMcyeUz/5ZVZZkLBJsm/EoXPHwh5DsjcH4t2",
+    "role": "Admin"
+  }
+]

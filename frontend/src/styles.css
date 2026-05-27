@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Marcellus&family=Cinzel:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #FDFBF7;
+    --bg-secondary: #FAF5EB;
+    --text-primary: #1E1B4B;
+    --text-secondary: #475569;
+    --border-color: #E2E8F0;
+    --accent-glow: rgba(212, 175, 55, 0.15);
+  }
+
+  .dark {
+    --bg-primary: #0A0A16;
+    --bg-secondary: #121226;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --border-color: #1E1E38;
+    --accent-glow: rgba(251, 191, 36, 0.1);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.4s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marcellus', 'Georgia', serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9933;
+}
+
+/* Divine Styling Utilities */
+.divine-gradient {
+  background: linear-gradient(135deg, #1E1B4B 0%, #0A0A16 100%);
+}
+
+.saffron-gradient {
+  background: linear-gradient(135deg, #FF9933 0%, #D97706 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #FBBF24 0%, #D4AF37 100%);
+}
+
+.divine-glow-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.divine-glow-card:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 10px 30px var(--accent-glow);
+  transform: translateY(-4px);
+}
+
+/* Standalone Lightbox Modal Styling */
+.lightbox-backdrop {
+  background-color: rgba(10, 10, 22, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+/* Glassmorphism Navbar */
+.glass-nav {
+  background-color: rgba(253, 251, 247, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .glass-nav {
+  background-color: rgba(10, 10, 22, 0.8);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.08);
+}
+
+.nav-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Parallax Banner Effect */
+.spiritual-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  .spiritual-hero {
+    background-attachment: scroll;
+  }
+}

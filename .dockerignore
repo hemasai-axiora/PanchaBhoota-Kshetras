@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/.git
+**/.vscode
+**/.angular
+docker-compose.override.yml
+.env
+.dockerignore
+Dockerfile
