@@ -27,9 +27,7 @@
       "Pradosham (Every fortnight)"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600100397608-f010e4785465?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1608958416719-74f07a72661f?auto=format&fit=crop&w=800&q=80"
+      "/images/ekambareswarar.png"
     ],
     "coordinates": {
       "latitude": 12.8465,
@@ -66,9 +64,7 @@
       "Thai Poosam (January-February)"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1566371486490-560ded239de6?auto=format&fit=crop&w=800&q=80"
+      "/images/jambukeswarar.png"
     ],
     "coordinates": {
       "latitude": 10.8534,
@@ -105,9 +101,7 @@
       "Maha Shivaratri (February-March)"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1621274790572-7c325d6bc67f?auto=format&fit=crop&w=800&q=80"
+      "/images/arunachaleswarar.png"
     ],
     "coordinates": {
       "latitude": 12.2319,
@@ -144,9 +138,7 @@
       "Karthika Masam (October-November)"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616038242814-a6eac7845d88?auto=format&fit=crop&w=800&q=80"
+      "/images/kalahasti.png"
     ],
     "coordinates": {
       "latitude": 13.7498,
@@ -183,15 +175,183 @@
       "Natyanjali Dance Festival (February-March) - Gathering of classical dancers"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80"
+      "/images/chidambaram.png"
     ],
     "coordinates": {
       "latitude": 11.3994,
       "longitude": 79.6933
     },
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3541571407335!2d79.69111131482035!3d11.399399991003666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54c30c88dbbeab%3A0xb3de37b988f01c69!2sThillai%20Nataraja%20Temple!5e0!3m2!1sen!2sin!4v1680000000004!5m2!1sen!2sin",
+    "featured": true
+  },
+  {
+    "_id": "t1",
+    "createdAt": "2026-06-03T16:15:00.000Z",
+    "name": "Kedarnath Temple",
+    "element": "Earth",
+    "elementSanskrit": "Kedar Lingam",
+    "deity": "Lord Kedar Shiva",
+    "consort": "Goddess Parvati",
+    "location": "Kedarnath",
+    "state": "Uttarakhand",
+    "description": "One of the most sacred pilgrimage centers in Northern India, nestled in the snow-clad Himalayas near Mandakini River. It is one of the 12 Jyotirlingas and the highest of the Panch Kedar temples.",
+    "history": "According to legend, the Pandavas built this temple to please Lord Shiva to absolute absolution of their sins. Shiva hid from them in the form of a bull, but Bhima caught him by his hump, which remained at Kedarnath.",
+    "powers": [
+      "Grants ultimate salvation (Moksha) and clearance of heavy sins.",
+      "Bestows endurance, extreme mental peace, and spiritual transformation."
+    ],
+    "timings": {
+      "morning": "4:00 AM - 3:00 PM",
+      "evening": "5:00 PM - 9:00 PM"
+    },
+    "festivals": [
+      "Badri-Kedar Utsav (June)",
+      "Kettar Puja"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "coordinates": {
+      "latitude": 30.7352,
+      "longitude": 79.0669
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.6457194689445!2d79.0647113!3d30.7351999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39083ee065e94b2d%3A0x6b7fa1f2ff23efff!2sKedarnath%20Temple!5e0!3m2!1sen!2sin!4v1680000000005!5m2!1sen!2sin",
+    "featured": true
+  },
+  {
+    "_id": "t2",
+    "createdAt": "2026-06-03T16:15:00.000Z",
+    "name": "Badrinath Temple",
+    "element": "Space",
+    "elementSanskrit": "Badri Narayan",
+    "deity": "Lord Vishnu (Badrinarayan)",
+    "consort": "Goddess Lakshmi",
+    "location": "Badrinath",
+    "state": "Uttarakhand",
+    "description": "A prominent Vishnu temple located in Garhwal hill tracks along the Alaknanda River. It is the chief shrine of both Chota Char Dham and grand Bada Char Dham yatra.",
+    "history": "Adi Shankara established Badrinath as a premier pilgrimage destination in the 8th century, finding the Shaligram deity of Lord Narayan in the Alaknanda riverbed.",
+    "powers": [
+      "Brings infinite peace, spiritual protection, and abundance of consciousness.",
+      "Balances cosmic elements inside seekers."
+    ],
+    "timings": {
+      "morning": "4:30 AM - 1:00 PM",
+      "evening": "4:00 PM - 9:00 PM"
+    },
+    "festivals": [
+      "Mata Murti Ka Mela (September)",
+      "Krishna Janmashtami"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1621415263409-0932f6ae6de0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "coordinates": {
+      "latitude": 30.7448,
+      "longitude": 79.4912
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.231221!2d79.490111!3d30.7448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39083effffff%3A0x6b7fa1f2ff23efab!2sBadrinath%20Temple!5e0!3m2!1sen!2sin!4v1680000000006!5m2!1sen!2sin",
+    "featured": true
+  },
+  {
+    "_id": "t3",
+    "createdAt": "2026-06-03T16:15:00.000Z",
+    "name": "Kashi Vishwanath Temple",
+    "element": "Light / Fire",
+    "elementSanskrit": "Vishveshvara",
+    "deity": "Lord Vishwanath",
+    "consort": "Goddess Annapurna",
+    "location": "Varanasi",
+    "state": "Uttar Pradesh",
+    "description": "Located on the holy banks of the Ganges in Varanasi, Kashi Vishwanath is one of the most famous Hindu temples, housing the sacred Golden Jyotirlinga.",
+    "history": "Varanasi is considered the oldest living city in the world. Shiva is believed to reside here eternally. The temple has been destroyed and rebuilt multiple times, with the current structure constructed by Ahilyabai Holkar in 1780.",
+    "powers": [
+      "Grants salvation and freedom from rebirth cycles.",
+      "Destroys negative energy, attachments, and ego instantly."
+    ],
+    "timings": {
+      "morning": "3:00 AM - 11:30 AM",
+      "evening": "12:30 PM - 11:00 PM"
+    },
+    "festivals": [
+      "Mahashivratri Brahmotsav",
+      "Dev Deepawali"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1561361513-2d000a50f0db?auto=format&fit=crop&w=800&q=80"
+    ],
+    "coordinates": {
+      "latitude": 25.3109,
+      "longitude": 83.0104
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.8122!2d83.0104!3d25.3109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2dbfaaaaa%3A0xc4eb789c0ea4fa98!2sKashi%20Vishwanath%20Temple!5e0!3m2!1sen!2sin!4v1680000000007!5m2!1sen!2sin",
+    "featured": true
+  },
+  {
+    "_id": "t4",
+    "createdAt": "2026-06-03T16:15:00.000Z",
+    "name": "Puri Jagannath Temple",
+    "element": "Water",
+    "elementSanskrit": "Neelachal",
+    "deity": "Lord Jagannath (Krishna)",
+    "consort": "Goddess Subhadra & Balabhadra",
+    "location": "Puri",
+    "state": "Odisha",
+    "description": "A world-famous temple dedicated to Lord Jagannath, famous for its grand annual Ratha Yatra (Chariot Festival). The temple represents the Eastern point of the Char Dham.",
+    "history": "Built by King Indradyumna and later expanded in the 12th century by King Anantavarman Chodaganga Deva. The wooden deities are ceremonially replaced every 12 to 19 years.",
+    "powers": [
+      "Brings immense prosperity, peace, and breaks the cycles of life and death.",
+      "Heals spiritual blocks and brings cosmic joy."
+    ],
+    "timings": {
+      "morning": "5:00 AM - 1:00 PM",
+      "evening": "4:00 PM - 11:30 PM"
+    },
+    "festivals": [
+      "Ratha Yatra (June-July)",
+      "Snana Yatra"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "coordinates": {
+      "latitude": 19.8049,
+      "longitude": 85.8179
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.02!2d85.8179!3d19.8049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c0aaaa%3A0xc4eb789c0ea4fa98!2sShree%20Jagannath%20Temple%20Puri!5e0!3m2!1sen!2sin!4v1680000000008!5m2!1sen!2sin",
+    "featured": true
+  },
+  {
+    "_id": "t5",
+    "createdAt": "2026-06-03T16:15:00.000Z",
+    "name": "Ramanathaswamy Temple",
+    "element": "Water / Earth",
+    "elementSanskrit": "Rameswaram",
+    "deity": "Lord Ramanathaswamy",
+    "consort": "Goddess Parvathavardhini",
+    "location": "Rameswaram",
+    "state": "Tamil Nadu",
+    "description": "Rameswaram Temple, situated on Rameswaram island, has the longest corridor among all Hindu temples in India. It is one of the 12 Jyotirlingas and the Southern node of the Char Dham.",
+    "history": "According to the Ramayana, Lord Rama constructed and worshiped the Shiva Lingam here to penance for sins committed during the war against Ravana in Lanka.",
+    "powers": [
+      "Washes away structural planetary afflictions and doshas.",
+      "Clears obstacles and provides deep mental focus."
+    ],
+    "timings": {
+      "morning": "5:00 AM - 1:00 PM",
+      "evening": "3:00 PM - 9:00 PM"
+    },
+    "festivals": [
+      "Maha Shivaratri",
+      "Thirukalyanam"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
+    ],
+    "coordinates": {
+      "latitude": 9.2881,
+      "longitude": 79.3174
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.11!2d79.3174!3d9.2881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b01c0aaaa%3A0xc4eb789c0ea4fa98!2sArulmigu%20Ramanatha%20Swamy%20Temple!5e0!3m2!1sen!2sin!4v1680000000009!5m2!1sen!2sin",
     "featured": true
   }
 ]

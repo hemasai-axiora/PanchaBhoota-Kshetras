@@ -12,5 +12,5 @@ import { ToastComponent } from './components/toast/toast.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'PanchaBhoota Kshetras';
+  title = 'Yatra';
 }

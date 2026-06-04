@@ -32,9 +32,7 @@ const templesData = [
       'Pradosham (Every fortnight)'
     ],
     images: [
-      'https://images.unsplash.com/photo-1600100397608-f010e4785465?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1608958416719-74f07a72661f?auto=format&fit=crop&w=800&q=80'
+      '/images/ekambareswarar.png'
     ],
     coordinates: {
       latitude: 12.8465,
@@ -69,9 +67,7 @@ const templesData = [
       'Thai Poosam (January-February)'
     ],
     images: [
-      'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1566371486490-560ded239de6?auto=format&fit=crop&w=800&q=80'
+      '/images/jambukeswarar.png'
     ],
     coordinates: {
       latitude: 10.8534,
@@ -106,9 +102,7 @@ const templesData = [
       'Maha Shivaratri (February-March)'
     ],
     images: [
-      'https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1621274790572-7c325d6bc67f?auto=format&fit=crop&w=800&q=80'
+      '/images/arunachaleswarar.png'
     ],
     coordinates: {
       latitude: 12.2319,
@@ -143,9 +137,7 @@ const templesData = [
       'Karthika Masam (October-November)'
     ],
     images: [
-      'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1616038242814-a6eac7845d88?auto=format&fit=crop&w=800&q=80'
+      '/images/kalahasti.png'
     ],
     coordinates: {
       latitude: 13.7498,
@@ -180,9 +172,7 @@ const templesData = [
       'Natyanjali Dance Festival (February-March) - Gathering of classical dancers'
     ],
     images: [
-      'https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80'
+      '/images/chidambaram.png'
     ],
     coordinates: {
       latitude: 11.3994,

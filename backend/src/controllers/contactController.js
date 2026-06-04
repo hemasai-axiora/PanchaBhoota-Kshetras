@@ -6,7 +6,7 @@ const fileDb = require('../config/fileDb');
 // @access  Public
 const createContact = async (req, res, next) => {
   try {
-    const { name, email, subject, message } = req.body;
+    const { name, email, phone, subject, message } = req.body;
 
     if (!name || !email || !subject || !message) {
       res.status(400);
@@ -18,6 +18,7 @@ const createContact = async (req, res, next) => {
       const contact = fileDb.create('contacts', {
         name,
         email,
+        phone,
         subject,
         message,
         status: 'Unread'
@@ -33,6 +34,7 @@ const createContact = async (req, res, next) => {
     const contact = await Contact.create({
       name,
       email,
+      phone,
       subject,
       message
     });
@@ -80,16 +82,15 @@ const getContacts = async (req, res, next) => {
 // @access  Private (Admin Only)
 const updateContactStatus = async (req, res, next) => {
   try {
-    const { status } = req.body;
-
-    if (!status || !['Read', 'Unread'].includes(status)) {
-      res.status(400);
-      throw new Error('Please provide a valid status: Read or Unread');
-    }
+    const { status, assignedAgent } = req.body;
 
     // --- Fail-safe local file DB fallback ---
     if (fileDb.isUsingFileDb()) {
-      const updated = fileDb.findByIdAndUpdate('contacts', req.params.id, { status });
+      const updateData = {};
+      if (status !== undefined) updateData.status = status;
+      if (assignedAgent !== undefined) updateData.assignedAgent = assignedAgent;
+
+      const updated = fileDb.findByIdAndUpdate('contacts', req.params.id, updateData);
       if (!updated) {
         res.status(404);
         throw new Error(`Message not found with id of ${req.params.id}`);
@@ -108,9 +109,13 @@ const updateContactStatus = async (req, res, next) => {
       throw new Error(`Message not found with id of ${req.params.id}`);
     }
 
+    const updateData = {};
+    if (status !== undefined) updateData.status = status;
+    if (assignedAgent !== undefined) updateData.assignedAgent = assignedAgent;
+
     contact = await Contact.findByIdAndUpdate(
       req.params.id,
-      { status },
+      updateData,
       { new: true, runValidators: true }
     );
 

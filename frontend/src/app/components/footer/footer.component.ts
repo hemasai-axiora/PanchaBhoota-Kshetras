@@ -15,9 +15,9 @@ import { RouterModule } from '@angular/router';
           
           <!-- Column 1: Intro -->
           <div class="space-y-4">
-            <h3 class="text-xl font-bold tracking-wider text-spiritual-saffron font-serif">PANCHABHOOTA</h3>
+            <h3 class="text-xl font-bold tracking-wider text-spiritual-saffron font-serif">YATRA</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              Explore the cosmic representations of Lord Shiva across five grand temples of Southern India, representing Earth, Water, Fire, Air, and Space.
+              Explore the cosmic representations of Lord Shiva across sacred temples, Jyotirlingas, and Char Dham circuits.
             </p>
             <div class="flex space-x-3 pt-2">
               <!-- Divine lotus shape or simple circles -->
@@ -83,7 +83,7 @@ import { RouterModule } from '@angular/router';
               Dedicated to sharing the rich Vedic knowledge and legendary histories of our temples.
             </p>
             <div class="text-xs text-slate-500 space-y-1">
-              <p>Email: contact&#64;panchabhoota.org</p>
+              <p>Email: contact&#64;yatra.org</p>
               <p>Address: Sacred Southern India Pilgrimage Route</p>
               <p>Workings: 6:00 AM – 9:00 PM</p>
             </div>
@@ -92,7 +92,7 @@ import { RouterModule } from '@angular/router';
         </div>
 
         <div class="border-t border-slate-800/80 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
-          <p>© 2026 PanchaBhoota Kshetras Pilgrimage. All rights reserved.</p>
+          <p>© 2026 Yatra Sacred Pilgrimages. All rights reserved.</p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a routerLink="/about" class="hover:text-spiritual-gold">Privacy Policy</a>
             <a routerLink="/about" class="hover:text-spiritual-gold">Terms of Use</a>

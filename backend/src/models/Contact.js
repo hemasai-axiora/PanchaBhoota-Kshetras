@@ -14,6 +14,10 @@ const ContactSchema = new mongoose.Schema({
       'Please add a valid email'
     ]
   },
+  phone: {
+    type: String,
+    trim: true
+  },
   subject: {
     type: String,
     required: [true, 'Please add a subject'],
@@ -22,6 +26,9 @@ const ContactSchema = new mongoose.Schema({
   message: {
     type: String,
     required: [true, 'Please add a message']
+  },
+  assignedAgent: {
+    type: Object
   },
   status: {
     type: String,

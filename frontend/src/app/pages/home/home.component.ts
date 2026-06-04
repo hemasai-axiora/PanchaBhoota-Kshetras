@@ -32,17 +32,20 @@ interface SpiritualQuote {
             ॐ नमः शिवाय — Om Namah Shivaya
           </span>
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold font-serif tracking-wide text-white leading-tight">
-            PanchaBhoota <span class="text-spiritual-saffron">Kshetras</span>
+            YATRA <span class="text-spiritual-saffron">Sacred Pilgrimages</span>
           </h1>
           <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
-            Embark on a sacred journey through the five ancient temples of Southern India representing the five primal cosmic elements of creation.
+            Embark on a sacred journey through the five cosmic elements, 12 holy Jyotirlingas, and Char Dham circuits.
           </p>
           <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a routerLink="/temples" class="w-full sm:w-auto px-8 py-4 rounded-full saffron-gradient text-white font-semibold shadow-lg shadow-spiritual-saffron/20 hover:shadow-spiritual-saffron/40 hover:scale-105 transition duration-300 text-center">
-              Explore Temples
+              Explore Shrines
             </a>
-            <a routerLink="/about" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition duration-300 text-center">
-              Learn the Cosmos
+            <a routerLink="/booking" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/25 text-white font-semibold hover:bg-white/10 hover:border-spiritual-gold transition duration-300 text-center">
+              Book Pilgrimage
+            </a>
+            <a routerLink="/track" class="w-full sm:w-auto px-8 py-4 rounded-full saffron-gradient text-white font-semibold shadow-lg shadow-spiritual-saffron/20 hover:shadow-spiritual-saffron/40 hover:scale-105 transition duration-300 text-center">
+              Track My Trip
             </a>
           </div>
         </div>
@@ -254,10 +257,10 @@ export class HomeComponent implements OnInit {
   currentQuote!: SpiritualQuote;
 
   featuredGallery = [
-    { url: 'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=600&q=80', temple: 'Ekambareswarar Temple', element: 'Earth' },
-    { url: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=600&q=80', temple: 'Jambukeswarar Temple', element: 'Water' },
-    { url: 'https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=600&q=80', temple: 'Arunachaleswarar Temple', element: 'Fire' },
-    { url: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80', temple: 'Sri Kalahasti Temple', element: 'Air' }
+    { url: '/images/ekambareswarar.png', temple: 'Ekambareswarar Temple', element: 'Earth' },
+    { url: '/images/jambukeswarar.png', temple: 'Jambukeswarar Temple', element: 'Water' },
+    { url: '/images/arunachaleswarar.png', temple: 'Arunachaleswarar Temple', element: 'Fire' },
+    { url: '/images/kalahasti.png', temple: 'Sri Kalahasti Temple', element: 'Air' }
   ];
 
   constructor(private apiService: ApiService) {}

@@ -17,10 +17,10 @@ import { AuthService } from '../../services/auth.service';
           <div class="flex-shrink-0 flex items-center">
             <a routerLink="/" class="flex items-center space-x-2">
               <span class="text-2xl font-bold tracking-wider text-spiritual-saffron font-serif hover:text-spiritual-gold transition duration-300">
-                PANCHABHOOTA
+                YATRA
               </span>
               <span class="hidden md:inline text-xs border border-spiritual-gold px-1.5 py-0.5 rounded text-spiritual-gold uppercase font-semibold">
-                Kshetras
+                Sacred Yatras
               </span>
             </a>
           </div>
@@ -31,6 +31,8 @@ import { AuthService } from '../../services/auth.service';
             <a routerLink="/temples" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">Temples</a>
             <a routerLink="/gallery" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">Gallery</a>
             <a routerLink="/about" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">About</a>
+            <a routerLink="/booking" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">Book Yatra</a>
+            <a routerLink="/track" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">Track Trip</a>
             <a routerLink="/contact" routerLinkActive="text-spiritual-saffron font-semibold" class="text-sm font-medium hover:text-spiritual-saffron transition duration-300">Contact</a>
             
             <ng-container *ngIf="admin$ | async as admin">
@@ -98,6 +100,8 @@ import { AuthService } from '../../services/auth.service';
           <a routerLink="/temples" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800">Temples</a>
           <a routerLink="/gallery" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800">Gallery</a>
           <a routerLink="/about" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800">About</a>
+          <a routerLink="/booking" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800">Book Yatra</a>
+          <a routerLink="/track" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800 font-semibold text-spiritual-saffron">Track Trip</a>
           <a routerLink="/contact" (click)="isMobileMenuOpen = false" class="block py-2 text-base font-medium border-b border-gray-100 dark:border-gray-800">Contact</a>
           
           <ng-container *ngIf="admin$ | async as admin">

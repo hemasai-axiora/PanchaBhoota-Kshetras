@@ -84,14 +84,48 @@ export class ApiService {
     );
   }
 
-  updateContactStatus(id: string, status: 'Read' | 'Unread'): Observable<any> {
-    return this.http.put(`${this.baseUrl}/contacts/${id}`, { status }, { headers: this.getHeaders() }).pipe(
+  updateContactStatus(id: string, updateData: { status?: 'Read' | 'Unread', assignedAgent?: any }): Observable<any> {
+    return this.http.put(`${this.baseUrl}/contacts/${id}`, updateData, { headers: this.getHeaders() }).pipe(
       catchError(this.handleError)
     );
   }
 
   deleteContact(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/contacts/${id}`, { headers: this.getHeaders() }).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  // --- Booking APIs ---
+  createBooking(bookingData: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/bookings`, bookingData).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  getBookings(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/bookings`, { headers: this.getHeaders() }).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  updateBooking(id: string, bookingData: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/bookings/${id}`, bookingData, { headers: this.getHeaders() }).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  deleteBooking(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/bookings/${id}`, { headers: this.getHeaders() }).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  trackBooking(email: string, phone: string, bookingId: string): Observable<any> {
+    let params = new HttpParams().set('bookingId', bookingId);
+    if (email) params = params.set('email', email);
+    if (phone) params = params.set('phone', phone);
+    return this.http.get(`${this.baseUrl}/bookings/track`, { params }).pipe(
       catchError(this.handleError)
     );
   }

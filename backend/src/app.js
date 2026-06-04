@@ -10,6 +10,7 @@ const templeRoutes = require('./routes/templeRoutes');
 const authRoutes = require('./routes/authRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const galleryRoutes = require('./routes/galleryRoutes');
+const bookingRoutes = require('./routes/bookingRoutes');
 
 const app = express();
 
@@ -49,6 +50,7 @@ app.use('/api/temples', templeRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/contacts', contactRoutes);
 app.use('/api/gallery', galleryRoutes);
+app.use('/api/bookings', bookingRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -57,7 +59,7 @@ app.get('/health', (req, res) => {
 
 // Root welcome endpoint
 app.get('/', (req, res) => {
-  res.send('Welcome to the PanchaBhoota Kshetras REST API Service');
+  res.send('Welcome to the Yatra REST API Service');
 });
 
 // Centralized Error Handler
